@@ -1,0 +1,1668 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The official flameshot site.">
+      
+      
+      
+        <meta name="author" content="The flameshot org.">
+      
+      
+        <link rel="canonical" href="https://flameshot.org/changelog/">
+      
+      <link rel="icon" href="../media/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>Changelog - Flameshot</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CFira+Code&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:"Fira Code"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#v090" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Flameshot" class="md-header__button md-logo" aria-label="Flameshot" data-md-component="logo">
+      
+  <img src="../media/flameshot.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Flameshot
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/flameshot-org/flameshot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Flameshot" class="md-nav__button md-logo" aria-label="Flameshot" data-md-component="logo">
+      
+  <img src="../media/flameshot.svg" alt="logo">
+
+    </a>
+    Flameshot
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/flameshot-org/flameshot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/installation/installation-index/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/key-bindings/" class="md-nav__link">
+        Key Bindings
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/troubleshooting/" class="md-nav__link">
+        Troubleshooting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/issue-reporting/" class="md-nav__link">
+        Issue Reporting
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Advanced
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Advanced" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Advanced
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/command-line-options/" class="md-nav__link">
+        Command Line Options
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        More
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          More
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../more/translation/" class="md-nav__link">
+        Translation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Changelog
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v090" class="md-nav__link">
+    v0.9.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.9.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v085" class="md-nav__link">
+    v0.8.5
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_1" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v084" class="md-nav__link">
+    v0.8.4
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_2" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v083" class="md-nav__link">
+    v0.8.3
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v081" class="md-nav__link">
+    v0.8.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_4" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v080" class="md-nav__link">
+    v0.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_5" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    Known Issues
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v060" class="md-nav__link">
+    v0.6.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.6.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    Features:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_6" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v051" class="md-nav__link">
+    v0.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_3" class="md-nav__link">
+    Features:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_7" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v050" class="md-nav__link">
+    v0.5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.5.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_4" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_8" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v042" class="md-nav__link">
+    v0.4.2
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.4.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hotfix" class="md-nav__link">
+    Hotfix:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v041" class="md-nav__link">
+    v0.4.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.4.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_5" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v040" class="md-nav__link">
+    v0.4.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.4.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_6" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_9" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030" class="md-nav__link">
+    v0.3.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.3.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_7" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_10" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extras_1" class="md-nav__link">
+    Extras
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v021" class="md-nav__link">
+    v0.2.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_11" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020" class="md-nav__link">
+    v0.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_8" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010" class="md-nav__link">
+    v0.1.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_9" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v090" class="md-nav__link">
+    v0.9.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.9.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v085" class="md-nav__link">
+    v0.8.5
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_1" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v084" class="md-nav__link">
+    v0.8.4
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_2" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v083" class="md-nav__link">
+    v0.8.3
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v081" class="md-nav__link">
+    v0.8.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_4" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v080" class="md-nav__link">
+    v0.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_5" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    Known Issues
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v060" class="md-nav__link">
+    v0.6.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.6.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    Features:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_6" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v051" class="md-nav__link">
+    v0.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_3" class="md-nav__link">
+    Features:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_7" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v050" class="md-nav__link">
+    v0.5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.5.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_4" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_8" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v042" class="md-nav__link">
+    v0.4.2
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.4.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hotfix" class="md-nav__link">
+    Hotfix:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v041" class="md-nav__link">
+    v0.4.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.4.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_5" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v040" class="md-nav__link">
+    v0.4.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.4.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_6" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_9" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030" class="md-nav__link">
+    v0.3.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.3.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_7" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_10" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extras_1" class="md-nav__link">
+    Extras
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v021" class="md-nav__link">
+    v0.2.1
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_11" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020" class="md-nav__link">
+    v0.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_8" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010" class="md-nav__link">
+    v0.1.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_9" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Changelog</h1>
+                
+                <h2 id="v090"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.9.0">v0.9.0</a><a class="headerlink" href="#v090" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2021.02.28</p>
+</blockquote>
+<h3 id="features">Features:<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Improved MacOS support. MacOS is now officially supported and we will resolve any reported issues on this platform.</li>
+<li>Thanks to SignPath we are able to offer digitally signed windows releases.</li>
+<li>Improved Wayland support on Gnome</li>
+<li>Behind the scenes we configure flameshot to automatically run on xcb. This significantly improves the
+    wayland experience. This resolves issues with multimonitor setups and copying to the clipboard</li>
+<li>Ability to run flameshot on Sway</li>
+<li>New option to allow the the clipboard image to be a jpeg instead of a png. This may reduce bandwidth when pasting the
+  image into chat or email clients</li>
+<li>New global shortcut menu. All actions hotkeys are fully customizable.</li>
+<li>Ability to take "symmetric" selections by holding down the Shift key while resizing the selection.</li>
+<li>The rectangle tool will now round the corners of the rectangles based on the current thickness</li>
+<li>All imgur uploads are now tracked in the "Upload History" menu. This makes it much easier to delete of images off imgur
+  or find the upload link later.</li>
+<li>Added "check for new release" feature. This allows users on MacOS / Windows / and AppImages to easily check for updated versions.</li>
+<li>New option for setting a "fixed save path". When this is enabled a user will no longer need to set the path for images
+  that are saved.</li>
+</ul>
+<h3 id="fixes">Fixes<a class="headerlink" href="#fixes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Under certain circumstance the circle count could get set to the wrong number with large numbers of undo / redo. This
+  has been fixed.</li>
+<li>Close after capture has been removed. This feature was not well implemented and lead to numerous bugs.</li>
+</ul>
+<h2 id="v085"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.8.5">v0.8.5</a><a class="headerlink" href="#v085" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2020.10.14</p>
+</blockquote>
+<h3 id="fixes_1">Fixes<a class="headerlink" href="#fixes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed Icon Regression</li>
+<li>Staged documentation for signed windows binaries</li>
+<li>Adjusted releasing info for flatpak, snapcraft, rpm, deb</li>
+<li>Snaps are now available on snapcraft so not posted here: <a href="https://snapcraft.io/flameshot">https://snapcraft.io/flameshot</a></li>
+<li>Flatpak is hosted on flathub so not posted here: <a href="https://flathub.org/apps/details/org.flameshot.Flameshot">https://flathub.org/apps/details/org.flameshot.Flameshot</a></li>
+<li>Current Windows Binaries are not signed but once they are available it will be uploaded here.</li>
+</ul>
+<hr />
+<h2 id="v084"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.8.4">v0.8.4</a><a class="headerlink" href="#v084" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2020.10.10</p>
+</blockquote>
+<h3 id="fixes_2">Fixes<a class="headerlink" href="#fixes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Renamed assets to match DBUS name for flathub support</li>
+<li>Fixed issue where theme was not applied to widgets</li>
+<li>Fixed issue where pixelate tool did not properly apply pixel size and was not symmetric horizontally and vertically</li>
+<li>Fixed visual artifact in pin to desktop in appimage release</li>
+<li>Fixed issue where CTRL + S did not save active text in text tool</li>
+<li>Imgur tool now opens in the center of the screen</li>
+<li>Translation Updates</li>
+<li>Brazilian Portuguese</li>
+<li>German</li>
+<li>Korean</li>
+<li>Basque</li>
+</ul>
+<hr />
+<h2 id="v083"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.8.3">v0.8.3</a><a class="headerlink" href="#v083" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2020.09.28</p>
+</blockquote>
+<h3 id="fixes_3">Fixes<a class="headerlink" href="#fixes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed Snap Packaging</li>
+<li>Small bug fixes</li>
+</ul>
+<hr />
+<h2 id="v081"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.8.1">v0.8.1</a><a class="headerlink" href="#v081" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2020.09.24</p>
+</blockquote>
+<h3 id="fixes_4">Fixes<a class="headerlink" href="#fixes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed ubuntu 18.04 packaging</li>
+<li>Auto contrast on circle counter</li>
+</ul>
+<hr />
+<h2 id="v080"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.8.0">v0.8.0</a><a class="headerlink" href="#v080" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2020.09.19</p>
+</blockquote>
+<h3 id="features_1">Features<a class="headerlink" href="#features_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add translation:</li>
+<li>Japanese</li>
+<li>Brazilian Portuguese</li>
+<li>Serbian</li>
+<li>Dutch</li>
+<li>Ukrainian</li>
+<li>German</li>
+<li>Slovak</li>
+<li>Basque</li>
+<li>Czech</li>
+<li>Swedish</li>
+<li>Italian</li>
+<li>Korean</li>
+<li>Dutch</li>
+<li>Allow enter key to copy image to clipboard</li>
+<li>side panel: Add thickness slider</li>
+<li>Add support for saving as JPG and BMP files.</li>
+<li>Allow 45 degree adjustment for some tools</li>
+<li>Add option to close after capture (WARNING: this function is buggy! It may not work well if you are going to copy the image to clipboard! If you encounter problems related to clipboard, please disable this feature in the configuration and try again.)</li>
+<li>Add a basic launcher panel.</li>
+<li>Add option to auto copy URL after upload</li>
+<li>Add a circle counter tool.</li>
+<li>Replace the blur tool with pixelate tool.</li>
+<li>Convert buildsystem from QMake to CMake.</li>
+<li>Add launcher action into .desktop file.</li>
+<li>Added Generic Packages (Snap, Flatpak, AppImage)</li>
+<li>Improved Windows support</li>
+</ul>
+<h3 id="fixes_5">Fixes<a class="headerlink" href="#fixes_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fix capture after pressing ctrl + S during textarea input</li>
+</ul>
+<h3 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wayland support is experimental. In generic packages (Snap, Flatpak, AppImage) there may be extra issues with Wayland.</li>
+<li>In generic packages(Snap, Flatpak, AppImage) due to confinement "Open With External Application" does not work.</li>
+<li>If "close after capture" is enabled, and a user copies the image to clipboard, the image may not actually be in the clipboard. We recommend using the "Save" feature with close after capture.</li>
+</ul>
+<hr />
+<h2 id="v060"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.6.0">v0.6.0</a><a class="headerlink" href="#v060" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2018.08.17</p>
+</blockquote>
+<h3 id="features_2">Features:<a class="headerlink" href="#features_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Allow systray customization with themes. Use "flameshot-tray" as the name of the icon.</li>
+<li>Unification of the desktop file with actions.</li>
+<li>Notification when screenshots are saved in the clipboard.</li>
+<li>Use datetime as default name for pics.</li>
+<li>Undo/Redo with Ctrl+z and Ctrl+Shift+z.</li>
+<li>Add "Take Screenshot" option as menu item in the systray.</li>
+<li>Add Side-Panel (open it with Space).</li>
+<li>Add autostart to config flags.</li>
+<li>Add Pin tool.</li>
+<li>Filename: replace colons with dashes.</li>
+<li>Add Text tool.</li>
+<li>Delete Imgur image button after uploading it from the preview window.</li>
+<li>Capture single screen:
+<code>flameshot screen</code> (capture the screen containing the mouse) and <code>flameshot screen -n 1</code> (capture the first screen).</li>
+<li>Store settings colors in hexadecimal format.</li>
+</ul>
+<h3 id="fixes_6">Fixes<a class="headerlink" href="#fixes_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>flameshot full -c shouldn't block the desktop.</li>
+<li>Now you can overwrite exported configuration with the same name as a previous exports.</li>
+<li>Fix flameshot --raw wait time with delay.</li>
+<li>Fix negative selection geometry bug.</li>
+<li>Improved hidpi support with some bugs fixed.</li>
+</ul>
+<hr />
+<h2 id="v051"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.5.1">v0.5.1</a><a class="headerlink" href="#v051" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2018.02.24</p>
+</blockquote>
+<h3 id="features_3">Features:<a class="headerlink" href="#features_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Polish, French, Georgian, Chinese, Turkish and Rusian translations</li>
+<li>Modal widgets doesn't prevent the start of a new capture</li>
+<li>Improved hidpi support (still needs some work)</li>
+<li>Tool buttons now don't go out of the screen</li>
+<li>Use of native file dialog</li>
+<li>Configurable opacity of the dark area outside the selection</li>
+<li>Autostart app as a configuration option</li>
+</ul>
+<h3 id="fixes_7">Fixes<a class="headerlink" href="#fixes_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Minor fixes</li>
+</ul>
+<hr />
+<h2 id="v050"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.5.0">v0.5.0</a><a class="headerlink" href="#v050" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.12.20</p>
+</blockquote>
+<h3 id="features_4">Features<a class="headerlink" href="#features_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Catalan translation.</li>
+<li>Debian package configuration.</li>
+<li>Add --raw flag: prints the raw bytes of the png after the capture.</li>
+<li>Bash completion.</li>
+<li>Blur tool.</li>
+<li>Preview draw size on mouse pointer after tool selection.</li>
+<li>App Launcher tool: choose an app to open the capture.</li>
+<li>Travis integration</li>
+<li>Configuration import, export and reset.</li>
+<li>Experimental Wayland support (Plasma &amp; Gnome)</li>
+</ul>
+<h3 id="accessibility">Accessibility<a class="headerlink" href="#accessibility" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Capture selection resizable using any border.</li>
+</ul>
+<h3 id="fixes_8">Fixes<a class="headerlink" href="#fixes_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>App version shown properly</li>
+<li>Now the cli wont break if you preppend a dash before gui, full and config arguments.</li>
+<li>Fix rare crash condition creating a selection during a graphical capture.</li>
+</ul>
+<hr />
+<h2 id="v042"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.4.2">v0.4.2</a><a class="headerlink" href="#v042" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.09.17</p>
+</blockquote>
+<h3 id="hotfix">Hotfix:<a class="headerlink" href="#hotfix" title="Permanent link">&para;</a></h3>
+<ul>
+<li>persistent configuration wasn't handled correctly for new users, failing to set a "initiated" status flag in the configuration. That is used to let the program know if a new process of Flameshot is the first launch of the program.</li>
+</ul>
+<hr />
+<h2 id="v041"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.4.1">v0.4.1</a><a class="headerlink" href="#v041" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.08.29</p>
+</blockquote>
+<h3 id="features_5">Features<a class="headerlink" href="#features_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Slightly darker capture background (Cross cursor more visible in Plasma)</li>
+<li>Flameshot compiles with QT 5.3 (Debian 8, Linux Mint, etc)</li>
+</ul>
+<hr />
+<h2 id="v040"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.4.0">v0.4.0</a><a class="headerlink" href="#v040" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.08.17</p>
+</blockquote>
+<h3 id="features_6">Features<a class="headerlink" href="#features_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The buttons hide when you have selected the whole screen and you try to draw behind them.</li>
+<li>Add informative labels in the filename editor.</li>
+<li>A better CLI parser with a more effective (and informative) syntax error handling.</li>
+<li>new CLI argument 'config' to manage some configurations from terminal.</li>
+<li>More uniform button's hovering color.</li>
+<li>Automatic horizontal adjustment in Marker and Line tools.</li>
+<li>Enhanced menus with expandable layouts.</li>
+<li>Add graphical option to disable the trayicon.</li>
+<li>Now you can check the version of Flameshot!</li>
+<li>Shrink the selection area when pushing against the borders of the screen.</li>
+<li>Now you can change the thickness of the drawing tools using the mouse wheel!</li>
+<li>Some more little changes.</li>
+</ul>
+<h3 id="fixes_9">Fixes<a class="headerlink" href="#fixes_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fix button's emerge animation while hovering.</li>
+<li>Fix freeze problem with save dialog and clipboard copy at the same time.</li>
+<li>Minor Fixes</li>
+</ul>
+<h3 id="extras">Extras<a class="headerlink" href="#extras" title="Permanent link">&para;</a></h3>
+<ul>
+<li>More code cleanup! (still more to do)</li>
+</ul>
+<hr />
+<h2 id="v030"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.3.0">v0.3.0</a><a class="headerlink" href="#v030" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.07.25</p>
+</blockquote>
+<h3 id="features_7">Features<a class="headerlink" href="#features_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add Desktop entry to init flameshot without commands.</li>
+<li>New configuration menu design.</li>
+<li>Define custom names for your captures!</li>
+<li>Improved error notifications when saving captures.</li>
+</ul>
+<h3 id="fixes_10">Fixes<a class="headerlink" href="#fixes_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Multiple monitor support.</li>
+<li>Makefile flag for custom installs (packaging)</li>
+<li>Non blocking error notifications.</li>
+<li>Add error notifications for Imgur uploads.</li>
+<li>Minor Fixes</li>
+</ul>
+<h3 id="extras_1">Extras<a class="headerlink" href="#extras_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Huge general code refactor.</li>
+<li>Dbus API refactor.</li>
+</ul>
+<hr />
+<h2 id="v021"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.2.1">v0.2.1</a><a class="headerlink" href="#v021" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.07.04</p>
+</blockquote>
+<h3 id="fixes_11">Fixes<a class="headerlink" href="#fixes_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fix inability to change active buttons in non english translated versions of the software due to a wrong identification of the type of the buttons.</li>
+</ul>
+<hr />
+<h2 id="v020"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.2.0">v0.2.0</a><a class="headerlink" href="#v020" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.06.20</p>
+</blockquote>
+<h3 id="features_8">Features<a class="headerlink" href="#features_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Better selection of buttons for colour edition.</li>
+<li>Independence of full screen captures not affecting the graphical captures.</li>
+<li>Desktop entry for a more convenient desktop integration.</li>
+</ul>
+<hr />
+<h2 id="v010"><a href="https://github.com/flameshot-org/flameshot/releases/tag/v0.1.0">v0.1.0</a><a class="headerlink" href="#v010" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>2017.06.19</p>
+</blockquote>
+<h3 id="features_9">Features<a class="headerlink" href="#features_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>First public release.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../more/translation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Translation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Translation
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 ~ 2021 The flameshot org.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/flameshot-org" target="_blank" rel="noopener" title="flameshot-org on Github" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="flameshotworkspace.slack.com/" target="_blank" rel="noopener" title="Flameshot Slack Workspace" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
